@@ -1,0 +1,66 @@
+extends ./default.pug
+
+block append head
+ script(src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js")
+ script(src="duomenys.js")
+ 
+ 
+
+block main
+ #app0
+  .r
+   .c4.center
+    
+     
+     fieldset
+      legend Paieška
+      
+      label(for="search") Butų paieška
+      input(type="text" v-model="search.title" id="search" placeholder="Įveskite ieškomo buto adresą")
+
+      p Kambarių skaičius
+      -var i = 1;
+      while i < 8
+       input(type="radio" v-model="search.kambariu_sk" name="kambariu-sk" value=i id='kambarys-'+i)
+       label(for='kambarys-'+i) #{i++}
+
+      p Aukštas
+      -var i = 1;
+      while i < 8
+       input(type="radio" v-model="search.aukstas" name="aukstas" value=i id='aukstas-'+i)
+       label(for='aukstas-'+i) #{i++}
+     
+  .r
+   .c0(v-show="filterData.length == 0")
+    p Pagal pateiktus filtrus nieko nerasta
+   .c5(v-for="posts in filterData")
+    table
+     tr
+      td Adresas
+      td {{posts.title}}
+     tr
+      td Gyvenvietė
+      td {{posts.gyvenvietė}}
+     tr
+      td Gatvė
+      td {{posts.gatve}}
+     tr
+      td Kaina
+      td {{posts.kaina}}
+     tr
+      td Būklė
+      td {{posts.bukle}}
+     tr
+      td Kambarių sk.
+      td {{posts.kambariu_sk}}
+     tr
+      td Plotas
+      td {{posts.plotas}}
+     tr
+      td Aukštas
+      td {{posts.aukstas}}
+       
+     
+
+    script(src=siteurl + "js/multiple-value-search.js")
+    //- script(src=siteurl + "js/search.js")
