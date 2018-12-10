@@ -33,39 +33,16 @@ metalsmith(__dirname)
   .use(markdown())
   .use(clear_collections(["default"])) //metalsmith-collection dublication bug workaround
   .use(collections({  // Used for navigation purposes
-    butai: {
-      pattern: 'butai/*.md',
+    default: {
+      pattern: 'default/*.md',
       refer: false, // skip adding the "next" and "previous" links to your articles
       // sortBy: 'title',
       // reverse: true
     }
   }))
   // .use( function(files, ms, done){
-  //   // var turinys = JSON.stringify(ms._metadata.butai);
-  //   console.log('butai: ', ms._metadata.butai);
-  //   var turinys = ms._metadata.butai;
-  //   var tuscias = [];
-  //   turinys.forEach(element => {
-  //     var obj = {};
-  //     obj.title = element.title;
-  //     obj.gyvenviete = element.gyvenviete;
-  //     obj.gatve = element.gatve;
-  //     obj.kaina = element.kaina;
-  //     obj.bukle = element.bukle;
-  //     obj.kambariu_sk = element.kambariu_sk;
-  //     obj.plotas = element.plotas;
-  //     obj.aukstas = element.aukstas;
-  //     tuscias.push(obj);
-  //   });
-  //   console.log('rezut: ', tuscias);
-    
-  //   // console.log('MS: ', ms._metadata.butai[1])
-  //   fs.writeFile("./src/butai/test.json", JSON.stringify(tuscias, null, 4), function (err) {
-  //     if (err) return console.log(err);
-  //     console.log("File saved");
-  //   })
-  //   // console.log(ms._metadata.collections.lektorius[0].contents.toString())
-  //   // console.log('files', files)
+  //   // console.log('MS: ', ms.)
+  //   // console.log('files: ', files)
   //   done()
   // })
   .use(layouts({

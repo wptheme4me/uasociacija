@@ -2,19 +2,11 @@
 $font-family: 'Ubuntu', sans-serif;
 
 //default row with
-<<<<<<< HEAD
-$row-small-width: 96%; $row-small-border: red;
-$row-medium-width: 96%; $row-medium-border: green; 
-$row-medium-up-width: 90%; $row-medium-up-border: blue;
-$row-large-width: 90%; $row-large-border: maroon;
-$row-large-up-width: 80%; $row-large-up-border: pink;
-=======
 $row-small-width: 96%; $row-small-border: grey;
 $row-medium-width: 96%; $row-medium-border: green; 
 $row-medium-up-width: 96%; $row-medium-up-border: blue;
 $row-large-width: 96%; $row-large-border: maroon;
 $row-large-up-width: 75%; $row-large-up-border: yellow;
->>>>>>> Initial import
 
 //columns
 $columns-border: none; 
@@ -40,10 +32,6 @@ body {
     font-weight: normal;
     color: $text-main-color;
     line-height: 150%;
-<<<<<<< HEAD
-    // background: $body-color url("../img/fonas-1.png") right -100px top 200px repeat-y;
-=======
->>>>>>> Initial import
     background: $body-color;
 }
 

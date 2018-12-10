@@ -36,7 +36,6 @@ metalsmith(__dirname)
   .use(layouts({
     engine: 'pug',
     directory: 'layouts',
-    pretty: false // 'false' minifies HTML
   }))
   .use(sass({ // Options https://github.com/sass/node-sass
     outputDir: 'css',
