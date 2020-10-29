@@ -17,4 +17,4 @@ iciatyvos "būsiu___" (buvusios "Kam to reikia?!) praktikas. Iniciatyvos tikslas
 
    nasu
 
-   ![kas](/img/uploads/logo.png "tas")
+   ![kas](/img/uploads/erasmusday-500x350.png "tas")
