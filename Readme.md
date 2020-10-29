@@ -1,6 +1,6 @@
-## Starter kit for static web sites
+## uasociacija.eu
 
-Here is my starter kit to speed up website development.
+Building site. Need content.
 
 ## Configuration notes
 
