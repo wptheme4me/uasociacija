@@ -6,4 +6,7 @@ module.exports = {
     google_analytics_key: "API-KEY",
     facebook_appid: "APP_ID",
     style_sheet: "/css/style.css",
+    contact_phone: "+37061550202",
+    contact_email: "info@uasociacija.eu",
+    contact_address: "Gatvė g. 125, Vilnius, Lietuva",
 }

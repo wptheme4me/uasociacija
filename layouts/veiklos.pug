@@ -1,0 +1,15 @@
+extends ./default.pug
+
+block main
+ section
+   .r
+    .c0
+     p Puslapis Veiklos
+   
+   each val in [1, 2, 3, 4, 5]
+    .r
+     .c4
+      img.img(src=siteurl + photo, alt="bla")
+     .c6
+      h1 Veiklos pavadinimas #{val}
+      != contents

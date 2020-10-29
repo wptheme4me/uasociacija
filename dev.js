@@ -25,7 +25,10 @@ metalsmith(__dirname)
     style_sheet: config.style_sheet,
     googleanalytics: config.google_analytics_key,
     facebook_appid: config.facebook_appid,
-    siteurl_fb_img: config.prod_siteurl_fb_img
+    siteurl_fb_img: config.prod_siteurl_fb_img,
+    contact_address: config.contact_address,
+    contact_phone: config.contact_phone,
+    contact_email: config.contact_email
   })
   .source('src')
   .destination('build')

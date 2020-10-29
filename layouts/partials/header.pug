@@ -1,6 +1,23 @@
+//- Mixin declaration, naudosiu footeri/headeri
+mixin kontaktai
+  ul.text-right
+    li #{contact_address}
+    li: a(href='mailto:' + contact_email)=contact_email
+    li: a(href='tel:' + contact_phone)=contact_phone
+
+mixin navigacija
+  nav.navigacija
+    a(href=siteurl + 'apie-mus') Apie mus
+    a(href=siteurl + 'veiklos') Veiklos
+
 header
  .r
   .c5
-   p left header
+   p UAsociacija.eu
   .c5
-   p right header
+   //- Mixin naudojimas aprašyta partials/header.pug
+   +kontaktai
+ .r 
+  .c0
+   //- Mixin naudojimas aprašyta partials/header.pug
+   +navigacija
