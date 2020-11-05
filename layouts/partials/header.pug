@@ -7,13 +7,15 @@ mixin kontaktai
 
 mixin navigacija
   nav.navigacija
-    a(href=siteurl + 'apie-mus') Apie mus
-    a(href=siteurl + 'veiklos') Veiklos
+    a(href=siteurl + '#activities') Activities  
+    a(href=siteurl + '#about-us') About us
+    a(href=siteurl + '#association-members') Association members
+    
 
 header
  .r
   .c5
-   p UAsociacija.eu
+   p.slug Association for Youth and Senior Occupation
   .c5
    //- Mixin naudojimas aprašyta partials/header.pug
    +kontaktai

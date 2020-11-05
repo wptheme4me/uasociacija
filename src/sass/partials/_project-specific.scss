@@ -1,8 +1,46 @@
 .navigacija {
-    a { display: inline-block;
-        border: 1px solid red;
+    a { 
+        display: inline-block;
+        border-bottom: 3px solid red;
         margin-right: 20px;
         padding: 10px;
-        
+        font-size: 1.3rem;;
      }
+}
+
+.svg-icons {
+    height: 140px;
+}
+
+.svg-icons-big {
+    height: 240px;
+}
+
+.news {
+    li {
+        border-bottom: 1px solid rgb(211, 211, 211);
+        padding: 20px 0px;
+    }
+}
+
+.slug {
+  font-size: 2.6rem;
+  padding: 0 0 20px 0;
+  margin: 0;
+  font-weight: 300;
+  line-height: 120%;
+  color: $title-color;
+}
+
+ul.about {
+    margin: 30px;
+  
+    li {
+      padding: 10px;
+      list-style-type: square;
+    }
+  }
+
+.small-text {
+    font-size: 0.8rem;
 }

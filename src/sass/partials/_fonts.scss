@@ -51,8 +51,8 @@ $headers-large: (
 );
 
 $headers-large-up: (
-  h1: 2rem 3rem,
-  h2: 1.2rem 1rem,
+  h1: 5rem 3rem,
+  h2: 2rem 1rem,
   h3: 3rem 1rem,
   h4: 18 1rem,
   h5: 17 1rem,
@@ -82,13 +82,4 @@ a {
   }
     
   img { border: 0; }
-}
-
-ul {
-  margin-left: 0px;
-
-  li {
-    margin: 10px 0;
-    cursor: pointer;
-  }
 }
