@@ -10,7 +10,6 @@ h4, .h4 {
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.4;
-  color: $title-color;
 }
 
 // Font sizes for mediaqueries: font-size, margin-bottom
@@ -79,6 +78,7 @@ a {
   
   &:hover, &:focus {
     color: $a-hover-color;
+    border-bottom: 3px solid $a-hover-color;
   }
     
   img { border: 0; }
